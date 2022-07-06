@@ -1,0 +1,766 @@
+* {
+
+    box-sizing: border-box;
+
+    text-decoration: none;
+
+}
+
+
+
+body {
+
+  margin:0;
+
+  font-family: 'Poppins', sans-serif;
+
+  font-size: 1rem;
+
+
+
+}
+
+
+
+/* Navigation menu */
+
+
+
+header {
+
+  background-image: url("../full-site2/burger-with-fries-optimized.jpg");
+
+  min-height: 380px;
+
+  background-position: bottom;
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  margin: 0;
+
+
+
+  /* position: relative; /*needed to position the navbar*/
+
+  position: relative;
+
+  background-color: #404040;
+
+  height: 100vh;
+
+
+
+}
+
+
+
+/* Navigation */
+
+
+
+nav {
+
+  /* background: #CCCCCC; */
+
+  width: 100%;
+
+  background: linear-gradient(rgba(0,0,0,1), rgba(255,0,0,0));
+
+}
+
+
+
+.logo-img {
+
+  height: 60px;
+
+  margin-left: 2em;
+
+  margin-top: 1em;
+
+}
+
+
+
+nav ul {
+
+  float: right;
+
+  margin: 1em 2em 1em 2em;
+
+  /* background: green; */
+
+}
+
+
+
+nav ul li {
+
+  display: inline-block;
+
+  line-height: 45px; /*the block height*/
+
+  /* background: red; */
+
+  margin: 0 2em;
+
+}
+
+
+
+nav ul li a {
+
+  color: white;
+
+  text-transform: uppercase;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  padding: .5em 1em;
+
+  border-radius: 3px;
+
+
+
+}
+
+
+
+nav ul li a:hover,
+
+nav ul li a:focus {
+
+  background: #f74b3c;
+
+}
+
+
+
+/* Typography */
+
+
+
+h1,
+
+h2,
+
+h3,
+
+h4,
+
+.p-team {
+
+  margin: 0;
+
+}
+
+
+
+
+
+h1 {
+
+  font-size: 4rem;
+
+  color: ; /*****/
+
+  font-weight: 900;
+
+  text-transform: uppercase;
+
+}
+
+
+
+h2 {
+
+  font-size: 2rem;
+
+  text-align: center;
+
+}
+
+
+
+h2,
+
+h4,
+
+.orange-p {
+
+  color: #eb4939;
+
+}
+
+
+
+h4 {
+
+  text-transform: uppercase;
+
+  text-align: center;
+
+}
+
+
+
+p {
+
+  letter-spacing: 1px;
+
+}
+
+
+
+.orange-p {
+
+  text-align: center;
+
+}
+
+
+
+
+
+/* Layout */
+
+
+
+.container {
+
+  width: 100%;
+
+  background: #FFF5CC;
+
+}
+
+
+
+section,
+
+.footer-container {
+
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+
+
+  }
+
+
+
+.section-one-container {
+
+  padding:2.5em 0;
+
+  border-bottom: 1px solid #eaeaea;
+
+}
+
+
+
+.section-one-text {
+
+  text-align: center;
+
+  padding: 0 10em 3em 10em;
+
+}
+
+
+
+
+
+.team {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  text-align: center;
+
+
+
+}
+
+
+
+.team-member-description {
+
+  padding: .7em;
+
+}
+
+
+
+.team-member-photo,
+
+.team-member {
+
+width: 18em;
+
+}
+
+
+
+.team-member {
+
+  margin-top: 1em;
+
+
+
+}
+
+
+
+.profile-photo {
+
+  border-radius: 50%;
+
+  transform: scale(1.0);
+
+
+
+}
+
+
+
+.profile-photo:hover,
+
+.profile-photo:focus {
+
+  transform: scale(1.1);
+
+  transform: 500ms;
+
+}
+
+
+
+.section-two-container {
+
+  border-bottom: 1px solid #eaeaea;
+
+}
+
+
+
+.packages-container {
+
+  padding: 3.0em 0;
+
+  display: flex;
+
+  justify-content: space-between;
+
+}
+
+
+
+.package-title {
+
+  padding: 3em 0;
+
+  padding-bottom: 0;
+
+}
+
+
+
+.packages {
+
+
+
+  max-width: 17em;
+
+  background: #f7efe0;
+
+  padding: 3em 1em;
+
+  margin: 0 1em;
+
+  text-align: center;
+
+  border-radius: 5px;
+
+}
+
+
+
+.price {
+
+  font-weight: 900;
+
+}
+
+
+
+.burger-vector {
+
+  width: 100px;
+
+}
+
+
+
+.section-three {
+
+  margin-top: 3em;
+
+}
+
+
+
+.newslatter-container {
+
+  padding: 10em 0;
+
+  margin-bottom: 4em;
+
+  background-color: #f7efe0;
+
+
+
+}
+
+
+
+.banner-text {
+
+  color: white;
+
+  /* background: lightblue; */
+
+  max-width: 32em;
+
+  min-width: 300px;
+
+  position: absolute;
+
+  top: 30%;
+
+  margin-left: 4em;
+
+  padding-left: 1em;
+
+
+
+}
+
+
+
+/* Buttons */
+
+
+
+
+
+.order-now,
+
+.btn-subscribe {
+
+  color: white;
+
+  background: #f74b3c;
+
+  text-transform: uppercase;
+
+  padding: .8em 2.3em;
+
+  margin-top: 1em;
+
+  border: none;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+
+
+
+
+}
+
+
+
+.order-now {
+
+  border-radius: 20px;
+
+  transform: scale(1.0);
+
+}
+
+
+
+.order-now:hover,
+
+.order-now:focus {
+
+  color:white;
+
+  transform: scale(1.1);
+
+  transition: transform 250ms;
+
+}
+
+
+
+input {
+
+  width: 60%;
+
+  font-family: inherit;
+
+  text-align: inherit;
+
+  margin-bottom: .75em;
+
+  margin-left: 8em;
+
+  padding: .78em;
+
+  border-top-left-radius: 20px;
+
+  border-bottom-left-radius: 20px;
+
+  border: none;
+
+  /* display: inline-block; pra remover o espaço entre o input e o subscribe button */
+
+  margin-right: -3px;
+
+}
+
+
+
+.btn-subscribe {
+
+  border-top-right-radius: 20px;
+
+  border-bottom-right-radius: 20px;
+
+}
+
+
+
+.btn-subscribe:hover,
+
+.btn-subscribe:focus {
+
+  background-color: #E04D01;
+
+  }
+
+
+
+
+
+/* Footer */
+
+
+
+
+
+footer {
+
+  width: 100%;
+
+  background-color: #232323;
+
+  margin: 0;
+
+  padding: 5em 0;
+
+}
+
+
+
+.footer-container {
+
+  background: #24262b;
+
+  margin: 0 auto;
+
+  max-width: 1000px;
+
+}
+
+
+
+.row-container {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  background: #232323;
+
+  margin: 0;
+
+  padding: 0 1em;
+
+
+
+}
+
+
+
+.row-column-description {
+
+  width: 35%;
+
+  margin-right: 1em;
+
+}
+
+
+
+.footer-h4 {
+
+  color: white;
+
+  text-align: left;
+
+  text-transform: capitalize;
+
+}
+
+
+
+.footer-title {
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  padding-bottom: 1em;
+
+}
+
+
+
+.footer-icons {
+
+  /* background: yellow; */
+
+  margin-top: 2em;
+
+
+
+}
+
+
+
+.fa {
+
+  padding: 11px;
+
+  font-size: 30px;
+
+  width: 35px;
+
+  height: 35px;
+
+  margin: 0 4px;
+
+  border-radius: 50%;
+
+}
+
+
+
+.fa:hover {
+
+    opacity: 0.7;
+
+}
+
+
+
+.fa-facebook {
+
+  background: white;
+
+  color: #f74b3c;
+
+
+
+}
+
+
+
+.fa-twitter {
+
+  background: white;
+
+  color: #f74b3c;;
+
+}
+
+
+
+.fa-instagram {
+
+  background: white;
+
+  color: #f74b3c;
+
+}
+
+
+
+.footer-col {
+
+  width: 70%;
+
+  /* background: green; */
+
+  margin: 1em;
+
+}
+
+
+
+
+
+ul {
+
+  list-style: none;
+
+
+
+}
+
+
+
+.footer-p,
+
+.footer-title,
+
+ footer ul li a {
+
+  color: white;
+
+  font-size: .85rem;
+
+}
+
+
+
+footer ul li a:hover,
+
+footer ul li a:focus {
+
+  color: #f74b3c;
+
+
+
+}
+
